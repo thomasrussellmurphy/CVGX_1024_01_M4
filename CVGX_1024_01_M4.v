@@ -5,89 +5,89 @@
 
 module CVGX_1024_01_M4(
 
-	//////////// CLOCK //////////
-	input 		          		CLOCK_125_p,
-	input 		          		CLOCK_50_B5B,
-	input 		          		CLOCK_50_B6A,
-	input 		          		CLOCK_50_B7A,
-	input 		          		CLOCK_50_B8A,
+         //////////// CLOCK //////////
+         input CLOCK_125_p,
+         input CLOCK_50_B5B,
+         input CLOCK_50_B6A,
+         input CLOCK_50_B7A,
+         input CLOCK_50_B8A,
 
-	//////////// LED //////////
-	output		     [7:0]		LEDG,
-	output		     [9:0]		LEDR,
+         //////////// LED //////////
+         output [ 7: 0 ] LEDG,
+         output [ 9: 0 ] LEDR,
 
-	//////////// KEY //////////
-	input 		          		CPU_RESET_n,
-	input 		     [3:0]		KEY,
+         //////////// KEY //////////
+         input CPU_RESET_n,
+         input [ 3: 0 ] KEY,
 
-	//////////// SW //////////
-	input 		     [9:0]		SW,
+         //////////// SW //////////
+         input [ 9: 0 ] SW,
 
-	//////////// SEG7 //////////
-	output		     [6:0]		HEX0,
-	output		     [6:0]		HEX1,
-	output		     [6:0]		HEX2,
-	output		     [6:0]		HEX3,
+         //////////// SEG7 //////////
+         output [ 6: 0 ] HEX0,
+         output [ 6: 0 ] HEX1,
+         output [ 6: 0 ] HEX2,
+         output [ 6: 0 ] HEX3,
 
-	//////////// HDMI-TX //////////
-	output		          		HDMI_TX_CLK,
-	output		    [23:0]		HDMI_TX_D,
-	output		          		HDMI_TX_DE,
-	output		          		HDMI_TX_HS,
-	input 		          		HDMI_TX_INT,
-	output		          		HDMI_TX_VS,
+         //////////// HDMI-TX //////////
+         output HDMI_TX_CLK,
+         output [ 23: 0 ] HDMI_TX_D,
+         output HDMI_TX_DE,
+         output HDMI_TX_HS,
+         input HDMI_TX_INT,
+         output HDMI_TX_VS,
 
-	//////////// ADC SPI //////////
-	output		          		ADC_CONVST,
-	output		          		ADC_SCK,
-	output		          		ADC_SDI,
-	input 		          		ADC_SDO,
+         //////////// ADC SPI //////////
+         output ADC_CONVST,
+         output ADC_SCK,
+         output ADC_SDI,
+         input ADC_SDO,
 
-	//////////// Audio //////////
-	input 		          		AUD_ADCDAT,
-	inout 		          		AUD_ADCLRCK,
-	inout 		          		AUD_BCLK,
-	output		          		AUD_DACDAT,
-	inout 		          		AUD_DACLRCK,
-	output		          		AUD_XCK,
+         //////////// Audio //////////
+         input AUD_ADCDAT,
+         inout AUD_ADCLRCK,
+         inout AUD_BCLK,
+         output AUD_DACDAT,
+         inout AUD_DACLRCK,
+         output AUD_XCK,
 
-	//////////// I2C for Audio/HDMI-TX/Si5338/HSMC //////////
-	output		          		I2C_SCL,
-	inout 		          		I2C_SDA,
+         //////////// I2C for Audio/HDMI-TX/Si5338/HSMC //////////
+         output I2C_SCL,
+         inout I2C_SDA,
 
-	//////////// SDCARD //////////
-	output		          		SD_CLK,
-	inout 		          		SD_CMD,
-	inout 		     [3:0]		SD_DAT,
+         //////////// SDCARD //////////
+         output SD_CLK,
+         inout SD_CMD,
+         inout [ 3: 0 ] SD_DAT,
 
-	//////////// Uart to USB //////////
-	input 		          		UART_RX,
-	output		          		UART_TX,
+         //////////// Uart to USB //////////
+         input UART_RX,
+         output UART_TX,
 
-	//////////// SRAM //////////
-	output		    [17:0]		SRAM_A,
-	output		          		SRAM_CE_n,
-	inout 		    [15:0]		SRAM_D,
-	output		          		SRAM_LB_n,
-	output		          		SRAM_OE_n,
-	output		          		SRAM_UB_n,
-	output		          		SRAM_WE_n,
+         //////////// SRAM //////////
+         output [ 17: 0 ] SRAM_A,
+         output SRAM_CE_n,
+         inout [ 15: 0 ] SRAM_D,
+         output SRAM_LB_n,
+         output SRAM_OE_n,
+         output SRAM_UB_n,
+         output SRAM_WE_n,
 
-	//////////// HSMC, HSMC connect to HSMC Default //////////
-	input 		     [2:1]		HSMC_CLKIN_N,
-	input 		     [2:1]		HSMC_CLKIN_P,
-	input 		          		HSMC_CLKIN0,
-	output		     [2:1]		HSMC_CLKOUT_N,
-	output		     [2:1]		HSMC_CLKOUT_P,
-	output		          		HSMC_CLKOUT0,
-	inout 		     [3:0]		HSMC_D,
-	input 		     [3:0]		HSMC_GXB_RX_P,
-	output		     [3:0]		HSMC_GXB_TX_P,
-	inout 		    [16:0]		HSMC_RX_N,
-	inout 		    [16:0]		HSMC_RX_P,
-	inout 		    [16:0]		HSMC_TX_N,
-	inout 		    [16:0]		HSMC_TX_P
-);
+         //////////// HSMC, HSMC connect to HSMC Default //////////
+         input [ 2: 1 ] HSMC_CLKIN_N,
+         input [ 2: 1 ] HSMC_CLKIN_P,
+         input HSMC_CLKIN0,
+         output [ 2: 1 ] HSMC_CLKOUT_N,
+         output [ 2: 1 ] HSMC_CLKOUT_P,
+         output HSMC_CLKOUT0,
+         inout [ 3: 0 ] HSMC_D,
+         input [ 3: 0 ] HSMC_GXB_RX_P,
+         output [ 3: 0 ] HSMC_GXB_TX_P,
+         inout [ 16: 0 ] HSMC_RX_N,
+         inout [ 16: 0 ] HSMC_RX_P,
+         inout [ 16: 0 ] HSMC_TX_N,
+         inout [ 16: 0 ] HSMC_TX_P
+       );
 
 
 
