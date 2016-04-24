@@ -74,59 +74,46 @@ module CVGX_1024_01_M4(
          output SRAM_WE_n,
 
          //////////// HSMC, HSMC connect to 1024-01 Standard Pinout //////////
-         output [ 3: 0 ] HSMC_GXB_TX_P;
-         input [ 3: 0 ] HSMC_GXB_RX_P;
-         inout [ 29: 0 ] UNUSED;
-         output BLINK1;
-         inout LMZ31503_CLK;
-         output BLINK2;
-         input LMZ31503_PWRGD;
-         output DACA_DATA1_P;
-         output DACA_DATA1_N;
-         output DACA_DATA0_P;
-         output DACA_DATA0_N;
-         output DAC_FCLKIN_P;
-         output DAC_FCLKIN_N;
-         output DACB_DATA0_P;
-         input ADCB_DATA1_P;
-         output DACB_DATA0_N;
-         input ADCB_DATA1_N;
-         output DACB_DATA1_P;
-         input ADCB_DATA0_P;
-         output DACB_DATA1_N;
-         input ADCB_DATA0_N;
-         input ADC_FCLKOUT_P;
-         input ADC_FCLKOUT_N;
-         input ADCA_DATA0_P;
-         input ADCA_DATA0_N;
-         output SYNCIN_P;
-         input ADCA_DATA1_P;
-         output SYNCIN_N;
-         input ADCA_DATA1_N;
-         output DAC_DCLKIN_P;
-         input ADC_DCLKOUT_P;
-         output DAC_DCLKIN_N;
-         input ADC_DCLKOUT_N;
-         output FPGA_AFE_PDN;
-         output FPGA_AFE_SEN;
-         output FPGA_AFE_SDATA;
-         output FPGA_AFE_SCLK;
-         inout FPGA_AFE_SDOUT;
-         output FPGA_AFE_RESET;
-         output FPGA_CDCE_MOSI;
-         input FPGA_CDCE_MISO;
-         output FPGA_CDCE_PD;
-         output FPGA_CDCE_SCLK;
-         output FPGA_CDCE_LE;
-         input FPGA_CDCE_PLL_LOCK;
-         output FPGA_ADRF_DATA;
-         input FPGA_AD5644R_CLK;
-         output FPGA_AD5644R_SYNC;
-         output FPGA_ADRF_LE;
-         output FPGA_ADRF_CLK;
-         input FPGA_ADRF_SDO;
-         output HSMC_CLKOUT2_P;
-         input FPGA_REF_CLK_P;
+         output [ 3: 0 ] HSMC_GXB_TX_P,
+         input [ 3: 0 ] HSMC_GXB_RX_P,
+         inout [ 29: 0 ] UNUSED,
+         output BLINK1,
+         inout LMZ31503_CLK,
+         output BLINK2,
+         input LMZ31503_PWRGD,
+         output DAC_DCLKIN_P,
+         output DAC_FCLKIN_P,
+         output DACA_DATA0_P,
+         output DACA_DATA1_P,
+         output DACB_DATA0_P,
+         output DACB_DATA1_P,
+         input ADC_DCLKOUT_P,
+         input ADC_FCLKOUT_P,
+         input ADCB_DATA0_P,
+         input ADCB_DATA1_P,
+         input ADCA_DATA0_P,
+         input ADCA_DATA1_P,
+         output SYNCIN_P,
+         output FPGA_AFE_PDN,
+         output FPGA_AFE_SEN,
+         output FPGA_AFE_SDATA,
+         output FPGA_AFE_SCLK,
+         inout FPGA_AFE_SDOUT,
+         output FPGA_AFE_RESET,
+         output FPGA_CDCE_MOSI,
+         input FPGA_CDCE_MISO,
+         output FPGA_CDCE_PD,
+         output FPGA_CDCE_SCLK,
+         output FPGA_CDCE_LE,
+         input FPGA_CDCE_PLL_LOCK,
+         output FPGA_ADRF_DATA,
+         input FPGA_AD5644R_CLK,
+         output FPGA_AD5644R_SYNC,
+         output FPGA_ADRF_LE,
+         output FPGA_ADRF_CLK,
+         input FPGA_ADRF_SDO,
+         output HSMC_CLKOUT2_P,
+         input FPGA_REF_CLK_P
        );
 
 
