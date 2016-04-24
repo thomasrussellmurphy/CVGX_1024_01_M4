@@ -74,8 +74,6 @@ module CVGX_1024_01_M4(
          output SRAM_WE_n,
 
          //////////// HSMC, HSMC connect to 1024-01 Standard Pinout //////////
-         output [ 3: 0 ] HSMC_GXB_TX_P,
-         input [ 3: 0 ] HSMC_GXB_RX_P,
          inout [ 29: 0 ] UNUSED,
          output BLINK1,
          inout LMZ31503_CLK,
