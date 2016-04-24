@@ -105,7 +105,7 @@ module CVGX_1024_01_M4(
          output FPGA_CDCE_LE,
          input FPGA_CDCE_PLL_LOCK,
          output FPGA_ADRF_DATA,
-         input FPGA_AD5644R_CLK,
+         output FPGA_AD5644R_CLK,
          output FPGA_AD5644R_SYNC,
          output FPGA_ADRF_LE,
          output FPGA_ADRF_CLK,
@@ -120,13 +120,49 @@ module CVGX_1024_01_M4(
 //  REG/WIRE declarations
 //=======================================================
 
+// For master config internal PLL
+wire cvconfigpll_lock;
+wire cvconfigpll_clk16;
+wire cvconfigpll_reset;
+
+// For CDCE config indication
+wire cdce_config_done;
+
+// For PLL reset and status
+assign cvconfigpll_reset = ~KEY[ 0 ];
+assign LEDG[ 0 ] = cvconfigpll_lock;
+assign LEDG [ 1 ] = FPGA_CDCE_PLL_LOCK;
 
 
+// Assigning configuration clock outputs, even if they aren't used
+assign FPGA_AFE_SCLK = cvconfigpll_clk16;
+assign FPGA_AD5644R_CLK = cvconfigpll_clk;
+assign FPGA_ADRF_CLK = ~cvconfigpll_clk16;
+assign FPGA_CDCE_SCLK = ~cvconfigpll_clk16;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 
+// PLL that supplies always-available clocks for configuration
+pll_50_to_16 config_pll(
+               .refclk( CLOCK_50_B7A ),
+               .rst( cvconfigpll_reset ),
+               .outclk_0( cvconfigpll_clk16 ),
+               .locked( cvconfigpll_lock )
+             );
 
+
+// Instantiate configuration controller
+cdce_configure configuration_master
+               (
+                 .clk( cvconfigpll_clk16 ),
+                 .reset_n( cvconfigpll_lock ),
+                 .miso( FPGA_CDCE_MISO ),
+                 .pdn( FPGA_CDCE_PD ),
+                 .cs_n( FPGA_CDCE_LE ),
+                 .mosi( FPGA_CDCE_MOSI ),
+                 .configure_done( cdce_config_done )
+               );
 
 endmodule

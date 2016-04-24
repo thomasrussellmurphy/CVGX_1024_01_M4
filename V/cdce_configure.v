@@ -6,13 +6,11 @@ module cdce_configure
          output pdn,
          output cs_n,
          output mosi,
-         output device_sync,
          output configure_done
        );
 
-// CDCE power down and sync are active low, so disable both
+// CDCE power down is active low, so disable it
 assign pdn = 1'b1;
-assign device_sync = 1'b1;
 
 // Don't have an upstream reset before starting configuration (always be done)
 wire reset_done = 1'b1;
@@ -41,29 +39,29 @@ cdce_command_controller command_controller
 
 command_rom #(
               .SOURCE( "../rom_data/cdce_configuration_rom_data_50.txt" ),
-                       .ADDRESS_WIDTH(8),
-                       .COMMAND_WIDTH(4),
-                       .DEVICE_DATA_WIDTH(32)
-                       )
-                       cdce_command_rom_50MHz
-                       (
-                       .clk( clk ),
-                       .reset_n( reset_n ),
-                       .address( rom_address ),
-                       .controller_command( controller_command ),
-                       .cdce_shift_data( cdce_command )
-                       );
+              .ADDRESS_WIDTH( 8 ),
+              .COMMAND_WIDTH( 4 ),
+              .DEVICE_DATA_WIDTH( 32 )
+            )
+            cdce_command_rom_50MHz
+            (
+              .clk( clk ),
+              .reset_n( reset_n ),
+              .address( rom_address ),
+              .controller_command( controller_command ),
+              .cdce_shift_data( cdce_command )
+            );
 
-                       cdce_serial_out serial_out
-                       (
-                       .clk( clk ),
-                       .reset_n( reset_n ),
-                       .enable( reset_done ),
-                       .start_transaction( start_transaction ),
-                       .parallel_input( cdce_command ),
-                       .cs_n( cs_n ),
-                       .mosi( mosi ),
-                       .transaction_done( transaction_done )
-                       );
+cdce_serial_out serial_out
+                (
+                  .clk( clk ),
+                  .reset_n( reset_n ),
+                  .enable( reset_done ),
+                  .start_transaction( start_transaction ),
+                  .parallel_input( cdce_command ),
+                  .cs_n( cs_n ),
+                  .mosi( mosi ),
+                  .transaction_done( transaction_done )
+                );
 
-                       endmodule
+endmodule
