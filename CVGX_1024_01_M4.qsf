@@ -374,273 +374,364 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_WE_n
 set_location_assignment PIN_W4 -to HSMC_GXB_TX_P[3]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_TX_P[3]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_TX_P[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_W4
 set_location_assignment PIN_V2 -to HSMC_GXB_RX_P[3]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_RX_P[3]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_RX_P[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_V2
 set_location_assignment PIN_AA4 -to HSMC_GXB_TX_P[2]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_TX_P[2]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_TX_P[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_AA4
 set_location_assignment PIN_Y2 -to HSMC_GXB_RX_P[2]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_RX_P[2]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_RX_P[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_Y2
 set_location_assignment PIN_AC4 -to HSMC_GXB_TX_P[1]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_TX_P[1]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_TX_P[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_AC4
 set_location_assignment PIN_AB2 -to HSMC_GXB_RX_P[1]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_RX_P[1]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_RX_P[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_AB2
 set_location_assignment PIN_AE4 -to HSMC_GXB_TX_P[0]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_TX_P[0]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_TX_P[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_AE4
 set_location_assignment PIN_AD2 -to HSMC_GXB_RX_P[0]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_RX_P[0]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to HSMC_GXB_RX_P[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_AD2
 set_location_assignment PIN_A7 -to UNUSED[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[0]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A7
 set_location_assignment PIN_N9 -to UNUSED[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[1]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_N9
 set_location_assignment PIN_D11 -to BLINK1
 set_instance_assignment -name IO_STANDARD "2.5 V" -to BLINK1
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to BLINK1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D11
 set_location_assignment PIN_H14 -to LMZ31503_CLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to LMZ31503_CLK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 MHz" -to LMZ31503_CLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_H14
 set_location_assignment PIN_D12 -to BLINK2
 set_instance_assignment -name IO_STANDARD "2.5 V" -to BLINK2
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to BLINK2
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D12
 set_location_assignment PIN_H13 -to LMZ31503_PWRGD
 set_instance_assignment -name IO_STANDARD "2.5 V" -to LMZ31503_PWRGD
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to LMZ31503_PWRGD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_H13
 set_location_assignment PIN_E10 -to DACA_DATA1_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACA_DATA1_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACA_DATA1_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E10
 set_location_assignment PIN_N12 -to UNUSED[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[2]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_N12
 set_location_assignment PIN_E11 -to DACA_DATA1_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACA_DATA1_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACA_DATA1_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E11
 set_location_assignment PIN_M12 -to UNUSED[3]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[3]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_M12
 set_location_assignment PIN_C9 -to DACA_DATA0_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACA_DATA0_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACA_DATA0_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_C9
 set_location_assignment PIN_M11 -to UNUSED[4]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[4]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[4]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_M11
 set_location_assignment PIN_B9 -to DACA_DATA0_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACA_DATA0_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACA_DATA0_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_B9
 set_location_assignment PIN_L11 -to UNUSED[5]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[5]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[5]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_L11
 set_location_assignment PIN_D10 -to DAC_FCLKIN_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DAC_FCLKIN_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to DAC_FCLKIN_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D10
 set_location_assignment PIN_H18 -to UNUSED[6]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[6]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[6]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_H18
 set_location_assignment PIN_C10 -to DAC_FCLKIN_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DAC_FCLKIN_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to DAC_FCLKIN_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_C10
 set_location_assignment PIN_H17 -to UNUSED[7]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[7]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_H17
 set_location_assignment PIN_A12 -to DACB_DATA0_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACB_DATA0_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACB_DATA0_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_A12
 set_location_assignment PIN_L12 -to ADCB_DATA1_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCB_DATA1_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCB_DATA1_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_L12
 set_location_assignment PIN_B11 -to DACB_DATA0_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACB_DATA0_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACB_DATA0_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_B11
 set_location_assignment PIN_K11 -to ADCB_DATA1_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCB_DATA1_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCB_DATA1_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_K11
 set_location_assignment PIN_B10 -to DACB_DATA1_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACB_DATA1_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACB_DATA1_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_B10
 set_location_assignment PIN_H15 -to ADCB_DATA0_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCB_DATA0_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCB_DATA0_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_H15
 set_location_assignment PIN_A11 -to DACB_DATA1_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DACB_DATA1_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to DACB_DATA1_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_A11
 set_location_assignment PIN_J16 -to ADCB_DATA0_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCB_DATA0_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCB_DATA0_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_J16
 set_location_assignment PIN_C20 -to UNUSED[8]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[8]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[8]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C20
 set_location_assignment PIN_J12 -to ADC_FCLKOUT_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADC_FCLKOUT_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to ADC_FCLKOUT_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_J12
 set_location_assignment PIN_B19 -to UNUSED[9]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[9]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[9]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B19
 set_location_assignment PIN_J11 -to ADC_FCLKOUT_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADC_FCLKOUT_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to ADC_FCLKOUT_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_J11
 set_location_assignment PIN_B15 -to UNUSED[10]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[10]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[10]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B15
 set_location_assignment PIN_G16 -to ADCA_DATA0_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCA_DATA0_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCA_DATA0_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_G16
 set_location_assignment PIN_C15 -to UNUSED[11]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[11]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[11]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C15
 set_location_assignment PIN_G17 -to ADCA_DATA0_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCA_DATA0_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCA_DATA0_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_G17
 set_location_assignment PIN_B22 -to SYNCIN_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to SYNCIN_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to SYNCIN_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_B22
 set_location_assignment PIN_G12 -to ADCA_DATA1_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCA_DATA1_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCA_DATA1_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_G12
 set_location_assignment PIN_A21 -to SYNCIN_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to SYNCIN_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to SYNCIN_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_A21
 set_location_assignment PIN_F12 -to ADCA_DATA1_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADCA_DATA1_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "800 MHz" -to ADCA_DATA1_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_F12
 set_location_assignment PIN_A19 -to DAC_DCLKIN_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to DAC_DCLKIN_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "400 MHz" -to DAC_DCLKIN_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_A19
 set_location_assignment PIN_G15 -to ADC_DCLKOUT_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADC_DCLKOUT_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "400 MHz" -to ADC_DCLKOUT_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_G15
 set_location_assignment PIN_A18 -to DAC_DCLKIN_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to DAC_DCLKIN_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "400 MHz" -to DAC_DCLKIN_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_A18
 set_location_assignment PIN_G14 -to ADC_DCLKOUT_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to ADC_DCLKOUT_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "400 MHz" -to ADC_DCLKOUT_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_G14
 set_location_assignment PIN_C13 -to UNUSED[12]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[12]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[12]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C13
 set_location_assignment PIN_E18 -to FPGA_AFE_PDN
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_PDN
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to FPGA_AFE_PDN
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E18
 set_location_assignment PIN_C12 -to UNUSED[13]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[13]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[13]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C12
 set_location_assignment PIN_F18 -to FPGA_AFE_SEN
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_SEN
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 MHz" -to FPGA_AFE_SEN
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_F18
 set_location_assignment PIN_A8 -to UNUSED[14]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[14]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[14]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A8
 set_location_assignment PIN_F16 -to FPGA_AFE_SDATA
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_SDATA
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_AFE_SDATA
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_F16
 set_location_assignment PIN_A9 -to UNUSED[15]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[15]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[15]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A9
 set_location_assignment PIN_E15 -to FPGA_AFE_SCLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_SCLK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_AFE_SCLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E15
 set_location_assignment PIN_B12 -to UNUSED[16]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[16]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[16]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B12
 set_location_assignment PIN_E13 -to FPGA_AFE_SDOUT
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_SDOUT
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_AFE_SDOUT
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_E13
 set_location_assignment PIN_A13 -to UNUSED[17]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[17]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[17]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A13
 set_location_assignment PIN_D13 -to FPGA_AFE_RESET
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AFE_RESET
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to FPGA_AFE_RESET
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D13
 set_location_assignment PIN_C23 -to UNUSED[18]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[18]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[18]
-set_location_assignment PIN_C14 -to FPGA_CDCE_MOSI
-set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_MOSI
-set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_CDCE_MOSI
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C23
+set_location_assignment PIN_C14 -to FPGA_CDCE_PD
+set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_PD
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to FPGA_CDCE_PD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_C14
 set_location_assignment PIN_C22 -to UNUSED[19]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[19]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[19]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C22
 set_location_assignment PIN_D15 -to FPGA_CDCE_MISO
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_MISO
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_CDCE_MISO
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_D15
 set_location_assignment PIN_A14 -to UNUSED[20]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[20]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[20]
-set_location_assignment PIN_E16 -to FPGA_CDCE_PD
-set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_PD
-set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to FPGA_CDCE_PD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A14
+set_location_assignment PIN_E16 -to FPGA_CDCE_MOSI
+set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_MOSI
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to FPGA_CDCE_MOSI
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E16
 set_location_assignment PIN_B14 -to UNUSED[21]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[21]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[21]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B14
 set_location_assignment PIN_D16 -to FPGA_CDCE_SCLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_SCLK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_CDCE_SCLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D16
 set_location_assignment PIN_A23 -to UNUSED[22]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[22]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[22]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A23
 set_location_assignment PIN_D18 -to FPGA_CDCE_LE
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_LE
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 MHz" -to FPGA_CDCE_LE
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D18
 set_location_assignment PIN_A22 -to UNUSED[23]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[23]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[23]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A22
 set_location_assignment PIN_D17 -to FPGA_CDCE_PLL_LOCK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_CDCE_PLL_LOCK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 Hz" -to FPGA_CDCE_PLL_LOCK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D17
 set_location_assignment PIN_C17 -to UNUSED[24]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[24]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[24]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C17
 set_location_assignment PIN_E20 -to FPGA_ADRF_DATA
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_ADRF_DATA
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_ADRF_DATA
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E20
 set_location_assignment PIN_B17 -to UNUSED[25]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[25]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[25]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B17
 set_location_assignment PIN_E19 -to FPGA_AD5644R_CLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AD5644R_CLK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_AD5644R_CLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_E19
 set_location_assignment PIN_C19 -to UNUSED[26]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[26]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[26]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C19
 set_location_assignment PIN_D21 -to FPGA_AD5644R_SYNC
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_AD5644R_SYNC
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 MHz" -to FPGA_AD5644R_SYNC
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D21
 set_location_assignment PIN_C18 -to UNUSED[27]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[27]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[27]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_C18
 set_location_assignment PIN_D20 -to FPGA_ADRF_LE
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_ADRF_LE
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "1 MHz" -to FPGA_ADRF_LE
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_D20
 set_location_assignment PIN_B21 -to UNUSED[28]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[28]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[28]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B21
 set_location_assignment PIN_B24 -to FPGA_ADRF_CLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_ADRF_CLK
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_ADRF_CLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to PIN_B24
 set_location_assignment PIN_B20 -to UNUSED[29]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to UNUSED[29]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 Hz" -to UNUSED[29]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_B20
 set_location_assignment PIN_A24 -to FPGA_ADRF_SDO
 set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_ADRF_SDO
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "20 MHz" -to FPGA_ADRF_SDO
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PIN_A24
 set_location_assignment PIN_A17 -to HSMC_CLKOUT2_P
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT2_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to HSMC_CLKOUT2_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR  -to PIN_A17
 set_location_assignment PIN_L8 -to FPGA_REF_CLK_P
 set_instance_assignment -name IO_STANDARD "LVDS" -to FPGA_REF_CLK_P
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to FPGA_REF_CLK_P
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR  -to PIN_L8
 set_location_assignment PIN_A16 -to HSMC_CLKOUT2_N
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT2_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to HSMC_CLKOUT2_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR  -to PIN_A16
 set_location_assignment PIN_K9 -to FPGA_REF_CLK_N
 set_instance_assignment -name IO_STANDARD "LVDS" -to FPGA_REF_CLK_N
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "125 MHz" -to FPGA_REF_CLK_N
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR  -to PIN_K9
+
 
 #============================================================
 # End of pin assignments by Terasic System Builder
