@@ -127,18 +127,24 @@ wire cvconfigpll_reset;
 
 // For CDCE config indication
 wire cdce_config_done;
+assign BLINK1 = FPGA_CDCE_PLL_LOCK;
 
 // For PLL reset and status
 assign cvconfigpll_reset = ~KEY[ 0 ];
 assign LEDG[ 0 ] = cvconfigpll_lock;
 assign LEDG [ 1 ] = FPGA_CDCE_PLL_LOCK;
 
+// Indicate configuration-done
+assign LEDR [ 0 ] = cdce_config_done;
 
 // Assigning configuration clock outputs, even if they aren't used
 assign FPGA_AFE_SCLK = cvconfigpll_clk16;
-assign FPGA_AD5644R_CLK = cvconfigpll_clk;
+assign FPGA_AD5644R_CLK = cvconfigpll_clk16;
 assign FPGA_ADRF_CLK = ~cvconfigpll_clk16;
 assign FPGA_CDCE_SCLK = ~cvconfigpll_clk16;
+
+// TEMP assignments here
+assign FPGA_AFE_PDN = 1'b1;
 
 //=======================================================
 //  Structural coding

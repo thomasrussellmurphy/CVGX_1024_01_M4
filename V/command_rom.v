@@ -18,7 +18,7 @@ localparam ROM_WIDTH = COMMAND_WIDTH + DEVICE_DATA_WIDTH;
 // Memory variable
 reg [ ROM_WIDTH - 1: 0 ] rom[ 2 ** ADDRESS_WIDTH - 1: 0 ];
 
-reg [ COMMAND_WIDTH: 0 ] command_reg;
+reg [ ROM_WIDTH - 1 : 0 ] command_reg;
 
 assign controller_command = command_reg[ ROM_WIDTH - 1: ROM_WIDTH - COMMAND_WIDTH ];
 assign device_data = command_reg[ DEVICE_DATA_WIDTH - 1: 0 ];

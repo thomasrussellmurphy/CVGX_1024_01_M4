@@ -49,7 +49,7 @@ command_rom #(
               .reset_n( reset_n ),
               .address( rom_address ),
               .controller_command( controller_command ),
-              .cdce_shift_data( cdce_command )
+              .device_data( cdce_command )
             );
 
 cdce_serial_out serial_out
