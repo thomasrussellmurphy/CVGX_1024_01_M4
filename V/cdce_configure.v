@@ -38,7 +38,7 @@ cdce_command_controller command_controller
                         );
 
 command_rom #(
-              .SOURCE( "../rom_data/cdce_configuration_rom_data_50.txt" ),
+              .SOURCE( "../rom_data/cdce_configuration_rom_data_test.txt" ),
               .ADDRESS_WIDTH( 8 ),
               .COMMAND_WIDTH( 4 ),
               .DEVICE_DATA_WIDTH( 32 )

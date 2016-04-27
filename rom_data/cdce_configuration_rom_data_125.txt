@@ -33,11 +33,11 @@
 //Register 0x02:
 // output disabled; reference divider setting
 168000002
-//1310E0302  for cmos
+//1310E0302  for cmos test
 
 //Register 0x01
 // 125MHz LVPECL, high swing disabled; secondary input reference divider /1
-1180E0321
+1810E0321
 
 //Register 0x00
 // 125MHzLVDS; primary input reference divider /1

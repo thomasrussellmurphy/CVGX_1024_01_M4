@@ -1,0 +1,47 @@
+// Format:
+//   [ 23: 20 ] command to state machine
+//      0000: stop, no further valid commands
+//      0001: valid command to send
+//      others: reserved
+//   [ 19: 0 ] 20-bit command to be sent to the AFE over SPI
+
+// We start at the top of the memory
+@00
+
+// Causes whole transmit chain to power down
+11031F
+// Causes whole receive chain to power down
+11671F
+
+// Write 0x00 to chip control as a delay, won't reset the chip
+100000
+
+// Turn on LVDS mode for Tx and Rx, SDOUT as output
+120A0E
+// Turn on duty cycle correction for ADC channel A
+10DB01
+// Turn on duty cycle correction for ADC channel B
+10F208
+// Set Tx interface to two-wire
+130B80
+// Set MASTER_OVERRIDE_TX on
+130C04
+// Set MASTER_OVERRIDE_RX and Rx interface to two-wire
+133A82
+// Sets sync-check pattern: 111000111000 in 2-wire mode
+133707
+
+// Power up part of ADC chain, leaving actual ADCs in mid-scale, low power state
+11671E
+
+// Should now wait to gain LVDS sync in high-speed domain
+
+// Power up whole transmit chain and keep FIFO enabled
+110300
+// Power up whole receive chain
+116700
+
+// Done
+000000
+
+// All remaining space will be filled with zeros

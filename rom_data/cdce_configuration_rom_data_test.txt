@@ -23,24 +23,24 @@
 110000A65
 
 //Register 0x04:
-// output disabled
+// U4 output disabled
 168000014
 
 //Register 0x3:
-// output disabled; reference divider setting /1
-168000003
+// U3 output disabled; reference divider setting /1
+111400023
 
 //Register 0x02:
-// output disabled; reference divider setting
+// U2 output disabled; reference divider setting /1
 168000002
 //1312C0302  for cmos test
 
 //Register 0x01
-// 50MHz LVPECL, high swing disabled; secondary input reference divider /1
+// U1 50MHz LVPECL, high swing disabled; secondary input reference divider /1
 1812C0321
 
 //Register 0x00
-// 50MHzLVDS; primary input reference divider /1
+// U0 50MHzLVDS; primary input reference divider /1
 1E92C0320
 
 //terminate
