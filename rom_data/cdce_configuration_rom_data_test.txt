@@ -8,20 +8,22 @@
 //	[3:0]	CDCE Address
 //
 
+
 // Implemented for 1024-01
 
 //Register 0x07:
 //vco loop calibrations; various
 //1BBA0F9C7
-1BD88BD47
+//1BD88BD47 2000MHZ vco
+1BDB1FBF7
 
 //Register 0x06:
 //vco charge pump; vco feedback settings; prescaler; select low freq vco
-104BE09E6
+104BE2F26
 
 //Register 0x05:
 //pll lock settings; input divider; input buffers and muxing settings
-110000A45
+1100C0A45
 
 //Register 0x04:
 // U4 output disabled
@@ -38,11 +40,11 @@
 
 //Register 0x01
 // U1 50MHz LVPECL, high swing disabled; secondary input reference divider /1
-1810E0321
+181oA0321
 
 //Register 0x00
 // U0 50MHzLVDS; primary input reference divider /1
-1E90E0320
+1E90A0320
 
 //terminate
 000000000
