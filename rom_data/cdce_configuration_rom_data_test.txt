@@ -21,7 +21,7 @@
 
 //Register 0x05:
 //pll lock settings; input divider; input buffers and muxing settings
-110000A65
+110000A45
 
 //Register 0x04:
 // U4 output disabled
@@ -38,11 +38,11 @@
 
 //Register 0x01
 // U1 50MHz LVPECL, high swing disabled; secondary input reference divider /1
-1812C0321
+1810E0321
 
 //Register 0x00
 // U0 50MHzLVDS; primary input reference divider /1
-1E92C0320
+1E90E0320
 
 //terminate
 000000000
