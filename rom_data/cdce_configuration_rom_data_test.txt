@@ -40,7 +40,7 @@
 
 //Register 0x01
 // U1 50MHz LVPECL, high swing disabled; secondary input reference divider /1
-181oA0321
+1810A0321
 
 //Register 0x00
 // U0 50MHzLVDS; primary input reference divider /1
