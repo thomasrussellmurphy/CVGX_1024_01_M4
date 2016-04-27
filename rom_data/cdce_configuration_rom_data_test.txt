@@ -12,7 +12,8 @@
 
 //Register 0x07:
 //vco loop calibrations; various
-1BBA0F9C7
+//1BBA0F9C7
+1BD88BD47
 
 //Register 0x06:
 //vco charge pump; vco feedback settings; prescaler; select low freq vco
@@ -27,7 +28,7 @@
 168000014
 
 //Register 0x3:
-// U3 output disabled; reference divider setting /1
+// U3 10MHz cmos; reference divider setting /1
 111400003
 
 //Register 0x02:
