@@ -150,8 +150,17 @@ assign FPGA_AFE_PDN = 1'b1;
 //  Structural coding
 //=======================================================
 
+// Blinking light on the board
+blink blink2_led_blink
+      (
+        .clk( cvconfigpll_clk16 ),
+        .reset_n( cvconfigpll_lock ),
+        .blink( BLINK2 )
+      );
+
 // PLL that supplies always-available clocks for configuration
-pll_50_to_16 config_pll(
+pll_50_to_16 config_pll
+             (
                .refclk( CLOCK_50_B7A ),
                .rst( cvconfigpll_reset ),
                .outclk_0( cvconfigpll_clk16 ),
